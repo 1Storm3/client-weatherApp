@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
-import Main from "./Main/Main";
+import WeatherApp from "./WeatherApp/WeatherApp";
 function App() {
   return (
     <div className="App">
-      <Main />
+      <WeatherApp />
     </div>
   );
 }
