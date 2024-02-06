@@ -1,0 +1,34 @@
+.error {
+  color: rgb(255, 60, 0);
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  color: rgb(235, 190, 190);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  color: rgb(2, 2, 1);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.tempDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(243, 243, 243);
+  padding: 10px 20px; /* добавляем отступы внутри div */
+  border-radius: 10px; /* добавляем закругление углов */
+  background-color: #10a195; /* устанавливаем фоновый цвет */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавляем тень */
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}

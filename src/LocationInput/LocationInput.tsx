@@ -1,6 +1,6 @@
 import LoadingSpinner from "LoadingSpinner/LoadingSpinner";
 import React, { useState } from "react";
-
+import s from "./LocationInput.module.css";
 interface LocationInputProps {
   onLocationChange: (location: string, weatherData: any) => void;
 }
@@ -31,15 +31,17 @@ const LocationInput: React.FC<LocationInputProps> = ({ onLocationChange }) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <div className={s.header}>Приложение погоды</div>
+      <form onSubmit={handleSubmit} className={s.searchForm}>
         <input
           type="text"
           placeholder="Введи город"
           value={location}
           onChange={handleInputChange}
+          className={s.searchInput}
         ></input>
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? <LoadingSpinner /> : " Отправить"}
+        <button type="submit" disabled={isLoading} className={s.searchButton}>
+          {isLoading ? <LoadingSpinner /> : " Ввести город"}
         </button>
       </form>
     </div>

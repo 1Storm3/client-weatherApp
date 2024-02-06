@@ -1,0 +1,43 @@
+@media (max-width: 478px) {
+  .graph {
+    max-width: 100% !important;
+  }
+  .copyright {
+    position: absolute !important;
+    right: 25% !important;
+    bottom: 2%;
+  }
+}
+
+.weekWeather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(235, 190, 190);
+}
+.container ul {
+  display: flex;
+  flex-direction: column;
+  color: rgb(243, 243, 243);
+  padding: 10px 20px; /* добавляем отступы внутри div */
+  border-radius: 10px; /* добавляем закругление углов */
+  background-color: #30634b; /* устанавливаем фоновый цвет */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавляем тень */
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.copyright {
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 10px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 2%;
+  right: 45%;
+}
