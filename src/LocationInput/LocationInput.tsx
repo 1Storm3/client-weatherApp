@@ -18,7 +18,8 @@ const LocationInput: React.FC<LocationInputProps> = ({ onLocationChange }) => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5001/weather?location=${location}`
+        // `http://localhost:5001/weather?location=${location}`
+        `https://weatherapp-32hv.onrender.com/weather?location=${location}`
       );
       const data = await response.json();
       onLocationChange(location, data);

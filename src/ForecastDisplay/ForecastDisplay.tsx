@@ -28,8 +28,10 @@ const ForecastDisplay: React.FC<ForecastDisplayProps> = ({ location }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5001/weather?location=${location}`
+          `https://weatherapp-32hv.onrender.com/weather?location=${location}`
         );
+
+        // `http://localhost:5001/weather?location=${location}`
         const data = await response.json();
         setForecastData(data);
       } catch (error) {
