@@ -30,7 +30,6 @@ const ForecastDisplay: React.FC<ForecastDisplayProps> = ({ location }) => {
         const response = await fetch(
           `https://weatherapp-32hv.onrender.com/weather?location=${location}`
         );
-
         // `http://localhost:5001/weather?location=${location}`
         const data = await response.json();
         setForecastData(data);
@@ -125,10 +124,6 @@ const ForecastDisplay: React.FC<ForecastDisplayProps> = ({ location }) => {
           </div>
         </>
       )}
-      <div className={s.copyright}>
-        Developed by
-        <a href="https://t.me/StormEV">STORM</a>
-      </div>
     </div>
   );
 };
